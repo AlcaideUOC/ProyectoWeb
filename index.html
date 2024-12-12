@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <!-- Contenedor del menú -->
+    <nav class="menu">
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logotipo del festival">
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícono hamburguesa -->
+        </div>
+
+        <!-- Opciones del menú -->
+        <ul class="menu-items" id="menu-items">
+            <li><a href="index.html" class="activo">EL FESTIVAL</a></li>
+            <li><a href="programacion.html">PROGRAMACIÓN</a></li>
+            <li><a href="pelicula.html">PELÍCULA</a></li>
+            <li><a href="sobre.html">SOBRE NOSOTROS</a></li>
+            <!-- Línea negra con redes sociales -->
+            <li class="redes-sociales-container">
+              <div class="redes-sociales">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Botón Mi Cuenta -->
+        <div class="mi-cuenta">
+            <a href="#micuenta" class="boton-cuenta">Mi Cuenta</a>
+        </div>
+    </nav>
+</header>
+
+    <section class="participa">
+      <div class="contenedor-texto">
+          <h1>¡Ya puedes subir tu contenido!</h1>
+          <button class="boton-participar">¡Quiero Participar!</button>
+          <p class="descripcion">
+              ¡Haz brillar tu talento en IndieFicción! Sube tu cortometraje de ciencia ficción independiente y comparte tu visión del futuro. ¡Participa ahora!
+          </p>
+      </div>
+  </section>
+  <section class="noticias">
+    <h2>Conoce las últimas noticias</h2>
+    <div class="contenedor-tarjetas">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta">
+            <img src="images/noticia1.jpg" alt="Imagen de Novedades">
+            <h3>Novedades</h3>
+            <p>Este año traemos muchas buenas noticias</p>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <img src="images/noticia2.jpg" alt="Imagen de Última Edición 2023">
+            <h3>Última Edición 2023</h3>
+            <p>Ya tenemos el reportaje del año anterior</p>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta">
+            <img src="images/noticia3.jpg" alt="Imagen de Es un día especial">
+            <h3>Es un día especial</h3>
+            <p>Se cumplen 15 años de nuestros comienzos y lo celebramos</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="carrusel-eventos">
+  <h2>Eventos</h2>
+  <p class="descripcion-eventos">Descubre los eventos, masterclass, mesas redondas y entrevistas</p>
+
+  <div class="carrusel">
+      <!-- Botones de navegación -->
+      <button class="boton-carrusel boton-prev" aria-label="Anterior">&lt;</button>
+      <div class="carrusel-contenedor">
+          <div class="carrusel-contenido">
+              <div class="tarjeta-evento">
+                  <img src="images/evento1.jpg" alt="Charlas">
+                  <h3>Charlas</h3>
+                  <p>Aprende las técnicas más novedosas</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+              <div class="tarjeta-evento">
+                  <img src="images/evento2.jpg" alt="Master Class">
+                  <h3>Master Class</h3>
+                  <p>Los tips más buscados de los profesionales más punteros</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+              <div class="tarjeta-evento">
+                  <img src="images/evento3.jpg" alt="Mesas Redondas">
+                  <h3>Mesas Redondas</h3>
+                  <p>Si debatir es lo tuyo o te gusta escuchar.</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+              <div class="tarjeta-evento">
+                  <img src="images/evento4.jpg" alt="Talleres">
+                  <h3>Talleres</h3>
+                  <p>Descubre cómo mejorar tus habilidades técnicas</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+              <div class="tarjeta-evento">
+                  <img src="images/evento5.jpg" alt="Exposiciones">
+                  <h3>Exposiciones</h3>
+                  <p>Visualiza proyectos innovadores</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+              <div class="tarjeta-evento">
+                  <img src="images/evento6.jpg" alt="Conferencias">
+                  <h3>Conferencias</h3>
+                  <p>Escucha a los líderes de la industria</p>
+                  <button class="boton-info">+ Info</button>
+              </div>
+          </div>
+      </div>
+      <button class="boton-carrusel boton-next" aria-label="Siguiente">&gt;</button>
+  </div>
+</section>
+
+
+
+
+<section class="tickets">
+  <h2>Tickets</h2>
+  <div class="tickets-grid">
+      <!-- Tarjeta 1 -->
+      <div class="ticket-item">
+          <img src="images/ticket1.jpg" alt="Reserva tu abono">
+          <h3>Reserva tu abono</h3>
+          <p>Si lo tuyo es no ponerte límites</p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="ticket-item">
+          <img src="images/ticket2.jpg" alt="Tickets por días">
+          <h3>Tickets por días</h3>
+          <p>Apúntate a nuestros días temáticos</p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="ticket-item">
+          <img src="images/ticket3.jpg" alt="Reservas de Talleres">
+          <h3>Reservas de Talleres</h3>
+          <p>Aprender es algo que todos necesitamos</p>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="ticket-item">
+          <img src="images/ticket4.jpg" alt="Ticket para Master Class">
+          <h3>Ticket para Master Class</h3>
+          <p>Comprueba nuestras ofertas y promociones</p>
+      </div>
+  </div>
+</section>
+
+<section class="emisiones-directo">
+  <div class="contenedor-seccion">
+      <div class="contenido">
+          <h2>Emisiones en directo</h2>
+          <p class="descripcion-emisiones">
+              Estas son algunas de las emisiones que ya se han emitido o bien están en directo
+          </p>
+          <div class="video-contenedor">
+              <img src="images/emision.jpg" alt="Emisión en directo">
+              <div class="boton-play">
+                  <a href="#" aria-label="Reproducir video">
+                      <span class="triangulo-play"></span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="agenda">
+  <div class="contenedor">
+      <h2>Agenda</h2>
+      <p class="descripcion-agenda">
+          Descubre las próximas fechas que tenemos programadas
+      </p>
+      <div class="agenda-grid">
+          <!-- Tarjeta 1 -->
+          <div class="tarjeta-agenda">
+              <img src="images/agenda1.jpg" alt="Taller sobre iluminación">
+              <h3>Taller sobre iluminación</h3>
+              <p>Aprende a iluminar escenas con 3 focos</p>
+              <button class="boton-info">+ Info</button>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="tarjeta-agenda">
+              <img src="images/agenda2.jpg" alt="Votaciones de categorías">
+              <h3>Votaciones de categorías</h3>
+              <p>No te pierdas la retransmisión</p>
+              <button class="boton-info">+ Info</button>
+          </div>
+          <!-- Tarjeta 3 -->
+          <div class="tarjeta-agenda">
+              <img src="images/agenda3.jpg" alt="Charla del director">
+              <h3>Charla del director</h3>
+              <p>Hablará de las novedades y otros puntos importantes</p>
+              <button class="boton-info">+ Info</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="suscripcion-boletin">
+  <div class="contenedor">
+      <h2>Suscríbete a nuestro boletín</h2>
+      <p class="descripcion-boletin">
+          Si te suscribes a nuestra newsletter, te mantendremos informado de todas las novedades
+      </p>
+      <form class="formulario-suscripcion" action="#" method="POST">
+          <input 
+              type="email" 
+              name="email" 
+              placeholder="Introduce tu correo electrónico" 
+              required>
+          <button type="submit">Suscribirse</button>
+      </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="contenedor-footer">
+      <h2>Enlaces útiles</h2>
+      <div class="footer-contenido">
+          <ul class="footer-enlaces">
+              <li><a href="#">El Festival</a></li>
+              <li><a href="#">Programación</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Noticias</a></li>
+          </ul>
+
+          <div class="footer-logo">
+              <img src="images/logo-blanco.png" alt="Logo">
+          </div>
+
+          <ul class="footer-enlaces">
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Contacta</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-redes">
+          <p>Conéctate con nosotros</p>
+          <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+  <!-- Incluir el archivo JavaScript -->
+<script src="js/carrusel.js"></script>
+<script src="js/menu.js"></script> 
+</body>
+</html>

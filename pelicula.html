@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <!-- Contenedor del menú -->
+    <nav class="menu">
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logotipo del festival">
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícono hamburguesa -->
+        </div>
+
+        <!-- Opciones del menú -->
+        <ul class="menu-items" id="menu-items">
+            <li><a href="index.html">EL FESTIVAL</a></li>
+            <li><a href="programacion.html">PROGRAMACIÓN</a></li>
+            <li><a href="pelicula.html"  class="activo">PELÍCULA</a></li>
+            <li><a href="sobre.html">SOBRE NOSOTROS</a></li>
+            <!-- Línea negra con redes sociales -->
+            <li class="redes-sociales-container">
+              <div class="redes-sociales">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Botón Mi Cuenta -->
+        <div class="mi-cuenta">
+            <a href="#micuenta" class="boton-cuenta">Mi Cuenta</a>
+        </div>
+    </nav>
+</header>
+
+
+
+<section class="section-destacada">
+  <div class="contenedor-destacado">
+    <div class="texto-izquierda">
+      <div class="etiqueta">
+        <span>2024</span>
+        <span>Experimental</span>
+      </div>
+      <h2>EL EXTRAÑO</h2>
+      <h3>Director destacado</h3>
+    </div>
+    <div class="texto-derecha">
+      <h2>UNA AVENTURA INCREÍBLE</h2>
+      <p>
+        Una joven descubre que posee poderes extraordinarios y se embarca en una misión para salvar a su mundo de una antigua profecía. Enfrentará desafíos, forjará alianzas y enfrentará su destino.
+      </p>
+    </div>
+  </div>
+</section>
+  
+
+
+<section class="navegacion-articles">
+  <div class="contenedor-botones-pelicula">
+    <button class="boton-nav activo" data-section="resumen">RESÚMEN</button>
+    <button class="boton-nav" data-section="reparto">REPARTO</button>
+    <button class="boton-nav" data-section="programacion">PROGRAMACIÓN</button>
+    <button class="boton-nav" data-section="trailer">TRAILER</button>
+    <button class="boton-nav" data-section="imagenes">IMÁGENES</button>
+  </div>
+</section>
+
+<article id="resumen" class="article-resumen">
+  <div class="contenido-resumen">
+    <!-- Columna del texto -->
+    <div class="texto-resumen">
+      <h2>RESÚMEN</h2>
+      <p>
+        Una joven común y corriente descubre que posee poderes extraordinarios, ocultos hasta entonces, que le permiten controlar elementos naturales y comunicarse con seres mágicos. Al enterarse de una antigua profecía que amenaza la paz de su mundo, se embarca en una aventura épica, decidida a evitar la destrucción de su hogar y sus seres queridos. Durante su viaje, enfrentará múltiples desafíos y enemigos, mientras se encuentra con aliados inesperados que comparten su misión. A medida que sus habilidades crecen, también lo hacen sus dudas y miedos. Sin embargo, descubre que el verdadero poder radica en su valentía y determinación.
+      </p>
+    </div>
+    <!-- Columna de la imagen -->
+    <div class="imagen-resumen">
+      <img src="images/resumen.jpg" alt="Fotograma de la película">
+      <h3><strong>Imagen de una parte</strong></h3>
+      <p>Aquí puedes ver un fotograma de la película</p>
+    </div>
+  </div>
+</article>
+
+
+<section id="reparto" class="section-reparto">
+  <h2>REPARTO</h2>
+  <p class="descripcion-reparto">
+    El reparto de esta película puedes verlo detallado en esta sección
+  </p>
+
+  <!-- Contenedor principal del carrusel -->
+  <div class="carrusel-reparto">
+    <button class="carrusel-btn btn-prev" aria-label="Anterior">&#9664;</button>
+
+    <div class="carrusel-items">
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta-reparto">
+        <img src="images/actores1.jpg" alt="Dirección">
+        <h3>Dirección</h3>
+        <p>Descubre quién ha dirigido esta película</p>
+        <a href="#">+ Info</a>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta-reparto">
+        <img src="images/actores2.jpg" alt="Parte técnica">
+        <h3>Parte técnica</h3>
+        <p>Iluminadores, técnicos de sonido, etc.</p>
+        <a href="#">+ Info</a>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta-reparto">
+        <img src="images/actores3.jpg" alt="Actores">
+        <h3>Actores</h3>
+        <p>El reparto detallado</p>
+        <a href="#">+ Info</a>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div class="tarjeta-reparto">
+        <img src="images/actores1.jpg" alt="Producción">
+        <h3>Producción</h3>
+        <p>Descubre la magia detrás de cámaras</p>
+        <a href="#">+ Info</a>
+      </div>
+
+      <!-- Tarjeta 5 -->
+      <div class="tarjeta-reparto">
+        <img src="images/actores2.jpg" alt="Efectos Especiales">
+        <h3>Efectos Especiales</h3>
+        <p>Los detalles visuales de la película</p>
+        <a href="#">+ Info</a>
+      </div>
+    </div>
+
+    <button class="carrusel-btn btn-next" aria-label="Siguiente">&#9654;</button>
+  </div>
+</section>
+
+
+
+<section id="programacion" class="section-programacion">
+  <h2>PROGRAMACIÓN</h2>
+
+  <div class="contenedor-programacion-pelicula">
+    <!-- Columna izquierda: Información de horario -->
+    <div class="info-horario">
+      <p class="dia">Viernes</p>
+      <p class="fecha">15</p>
+      <p class="hora">18:00 <br> - <br> 19:45</p>
+      <p class="duracion">(105 min)</p>
+    </div>
+
+    <!-- Columna central: Información de la película -->
+    <div class="info-pelicula">
+      <h3>La llegada de los OVNIS</h3>
+      <ul>
+        <li>Español</li>
+        <li>V.O. Subtítulos en inglés</li>
+        <li>Ganadora de múltiples premios</li>
+        <li>105 minutos de duración</li>
+        <li>Emisión gratuita</li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha: Imagen -->
+    <div class="imagen-programacion">
+      <img src="images/programacion-ovnis.jpg" alt="La llegada de los OVNIS">
+    </div>
+  </div>
+</section>
+
+
+<section id="trailer" class="section-trailer">
+  <h2>TRAILER</h2>
+
+  <div class="contenedor-trailer">
+    <!-- Imagen con botón de play -->
+    <div class="contenedor-video">
+      <img src="images/trailer-thumbnail.jpg" alt="Trailer de la película">
+      <button class="boton-play" aria-label="Reproducir video">
+        <span class="icono-play"></span>
+      </button>
+    </div>
+    
+    <!-- Descripción -->
+    <p class="descripcion-trailer">
+      Una joven descubre poderes ocultos que la conectan con una antigua profecía. Decidida a salvar su mundo, enfrenta desafíos, enemigos y forja nuevas alianzas. Con cada paso, se acerca más a su destino.
+    </p>
+  </div>
+</section>
+
+
+<section id="imagenes" class="section-imagenes">
+  <h2>IMÁGENES</h2>
+
+  <!-- Contenedor del carrusel -->
+  <div class="carrusel-imagenes">
+    <button class="carrusel-btn btn-prev" aria-label="Anterior">&#9664;</button>
+
+    <div class="carrusel-items">
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen1.jpg" alt="Dirección">
+        <h3>Dirección</h3>
+        <p>Descubre quién ha dirigido esta película</p>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen2.jpg" alt="Parte técnica">
+        <h3>Parte técnica</h3>
+        <p>Iluminadores, técnicos de sonido</p>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen3.jpg" alt="Actores">
+        <h3>Actores</h3>
+        <p>El reparto detallado</p>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen4.jpg" alt="Nuestro estreno">
+        <h3>Nuestro estreno</h3>
+        <p>Nos pusimos las mejores galas</p>
+      </div>
+      <!-- Tarjeta 5 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen5.jpg" alt="Escenografía">
+        <h3>Escenografía</h3>
+        <p>Detalles de la ambientación</p>
+      </div>
+      <!-- Tarjeta 6 -->
+      <div class="tarjeta-imagen">
+        <img src="images/imagen6.jpg" alt="Momentos destacados">
+        <h3>Momentos destacados</h3>
+        <p>Lo más épico del rodaje</p>
+      </div>
+    </div>
+
+    <button class="carrusel-btn btn-next" aria-label="Siguiente">&#9654;</button>
+  </div>
+</section>
+
+
+
+
+
+  <section class="suscripcion-boletin">
+    <div class="contenedor">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <p class="descripcion-boletin">
+            Si te suscribes a nuestra newsletter, te mantendremos informado de todas las novedades
+        </p>
+        <form class="formulario-suscripcion" action="#" method="POST">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Introduce tu correo electrónico" 
+                required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </div>
+  </section>
+
+
+
+
+<footer class="footer">
+  <div class="contenedor-footer">
+      <h2>Enlaces útiles</h2>
+      <div class="footer-contenido">
+          <ul class="footer-enlaces">
+              <li><a href="#">El Festival</a></li>
+              <li><a href="#">Programación</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Noticias</a></li>
+          </ul>
+
+          <div class="footer-logo">
+              <img src="images/logo-blanco.png" alt="Logo">
+          </div>
+
+          <ul class="footer-enlaces">
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Contacta</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-redes">
+          <p>Conéctate con nosotros</p>
+          <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="js/filtro.js"></script>
+<script src="js/menu.js"></script> 
+<script src="js/carrusel2.js"></script> 
+</body>
+</html>

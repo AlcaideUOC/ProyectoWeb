@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <!-- Contenedor del menú -->
+    <nav class="menu">
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logotipo del festival">
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícono hamburguesa -->
+        </div>
+
+        <!-- Opciones del menú -->
+        <ul class="menu-items" id="menu-items">
+            <li><a href="index.html">EL FESTIVAL</a></li>
+            <li><a href="programacion.html"  class="activo">PROGRAMACIÓN</a></li>
+            <li><a href="pelicula.html">PELÍCULA</a></li>
+            <li><a href="sobre.html">SOBRE NOSOTROS</a></li>
+            <!-- Línea negra con redes sociales -->
+            <li class="redes-sociales-container">
+              <div class="redes-sociales">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Botón Mi Cuenta -->
+        <div class="mi-cuenta">
+            <a href="#micuenta" class="boton-cuenta">Mi Cuenta</a>
+        </div>
+    </nav>
+</header>
+
+
+
+<section class="programacion-eventos">
+    <div class="contenedor">
+      <div class="texto-programacion">
+        <h2>PROGRAMACIÓN Y EVENTOS</h2>
+        <p>
+          El Festival IndieFicción celebra lo mejor del cine independiente de ciencia ficción con una programación diversa que abarca proyecciones, talleres y paneles.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- Nueva sección con botones -->
+<section class="botones-navegacion">
+    <div class="contenedor-botones">
+        <button class="boton activo" data-section="programacion">PROGRAMACIÓN</button>
+        <button class="boton" data-section="eventos">EVENTOS</button>
+        <button class="boton" data-section="eventos-pasados">EVENTOS PASADOS</button>
+    </div>
+</section>
+
+
+
+  
+  <section class="programacion"  id="programacion">
+    <div class="contenedor-programacion">
+      <h2>PROGRAMACIÓN</h2>
+  
+      <!-- Primer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">15</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>La llegada de los OVNIS</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/ovni.jpg" alt="La llegada de los OVNIS">
+        </div>
+      </div>
+  
+      <!-- Segundo bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">21</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>Horizontes Digitales</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/horizontes.jpg" alt="Horizontes Digitales">
+        </div>
+      </div>
+  
+      <!-- Tercer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">23</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>El Último Suspiro del Cosmos</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/cosmos.jpg" alt="El Último Suspiro del Cosmos">
+        </div>
+      </div>
+  
+      <!-- Botón Ver Más -->
+      <div class="boton-ver-mas">
+        <button>VER MÁS</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="programacion" id="eventos">
+    <div class="contenedor-eventos">
+      <h2>EVENTOS</h2>
+  
+      <!-- Primer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">15</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>La llegada de los OVNIS</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/eventos-programacion1.jpg" alt="La llegada de los OVNIS">
+        </div>
+      </div>
+  
+      <!-- Segundo bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">21</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>Horizontes Digitales</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/eventos-programacion2.jpg" alt="Horizontes Digitales">
+        </div>
+      </div>
+  
+      <!-- Tercer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">23</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>El Último Suspiro del Cosmos</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/eventos-programacion3.jpg" alt="El Último Suspiro del Cosmos">
+        </div>
+      </div>
+  
+      <!-- Botón Ver Más -->
+      <div class="boton-ver-mas">
+        <button>VER MÁS</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="programacion" id="eventos-pasados">
+    <div class="contenedor-eventos">
+      <h2>EVENTOS PASADOS</h2>
+  
+      <!-- Primer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">15</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>La llegada de los OVNIS</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/evento1.jpg" alt="La llegada de los OVNIS">
+        </div>
+      </div>
+  
+      <!-- Segundo bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">21</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>Horizontes Digitales</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/evento2.jpg" alt="Horizontes Digitales">
+        </div>
+      </div>
+  
+      <!-- Tercer bloque -->
+      <div class="programacion-item">
+        <div class="programacion-fecha">
+          <span class="dia">23</span>
+          <span class="hora">18:00 - 19:45</span>
+          <span class="duracion">(105 min)</span>
+        </div>
+        <div class="programacion-contenido">
+          <h3>El Último Suspiro del Cosmos</h3>
+          <p>Español<br>
+          V.O. Subtítulos en inglés<br>
+          Ganadora de múltiples premios<br>
+          105 minutos de duración<br>
+          Emisión gratuita</p>
+        </div>
+        <div class="programacion-imagen">
+          <img src="images/evento3.jpg" alt="El Último Suspiro del Cosmos">
+        </div>
+      </div>
+  
+      <!-- Botón Ver Más -->
+      <div class="boton-ver-mas">
+        <button>VER MÁS</button>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+
+  <section class="suscripcion-boletin">
+    <div class="contenedor">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <p class="descripcion-boletin">
+            Si te suscribes a nuestra newsletter, te mantendremos informado de todas las novedades
+        </p>
+        <form class="formulario-suscripcion" action="#" method="POST">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Introduce tu correo electrónico" 
+                required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </div>
+  </section>
+
+
+
+<footer class="footer">
+  <div class="contenedor-footer">
+      <h2>Enlaces útiles</h2>
+      <div class="footer-contenido">
+          <ul class="footer-enlaces">
+              <li><a href="#">El Festival</a></li>
+              <li><a href="#">Programación</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Noticias</a></li>
+          </ul>
+
+          <div class="footer-logo">
+              <img src="images/logo-blanco.png" alt="Logo">
+          </div>
+
+          <ul class="footer-enlaces">
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Contacta</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-redes">
+          <p>Conéctate con nosotros</p>
+          <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<script src="js/filtro.js"></script>
+<script src="js/menu.js"></script> 
+</body>
+</html>
