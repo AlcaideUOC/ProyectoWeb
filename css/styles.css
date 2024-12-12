@@ -1615,6 +1615,18 @@ button[type="submit"]:hover {
     white-space: nowrap;
 }
 
+a {
+    color: white; /* Asegura que los enlaces sean blancos */
+    text-decoration: none; /* Elimina subrayado si es necesario */
+}
+
+a .fab, a .triangulo-play {
+    color: white; /* Aplica color blanco a los íconos */
+}
+
+a:hover .fab, a:hover .triangulo-play {
+    color: #ccc; /* Opcional: color gris en hover */
+}
 
 
 
