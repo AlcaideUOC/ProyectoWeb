@@ -1310,7 +1310,6 @@ header {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-    padding: 30px;
     box-sizing: border-box;
     color: #fff;
     /* Sección con imagen de fondo, texto a la derecha y botones de acción. */
