@@ -2005,5 +2005,14 @@ a:hover .fab, a:hover .triangulo-play {
         text-align: center;
     }
 
+    .seccion-ultima-edicion {
+        margin-top: 60px;
+    }
+
+    .botones-accion {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
 
