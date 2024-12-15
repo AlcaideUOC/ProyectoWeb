@@ -144,21 +144,20 @@ header {
     /* Tamaño de los iconos sociales. */
 }
 
+
 .participa {
     background-image: url('../images/participa.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     max-width: 1280px;
     height: 405px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     color: #fff;
     padding: 20px;
-    position: relative;
     /* Sección "participa": imagen de fondo, texto y botón. */
 }
 
@@ -1330,6 +1329,8 @@ header {
     color: #fff;
     /* Sección con imagen de fondo, texto a la derecha y botones de acción. */
 }
+
+
 .seccion-ultima-edicion .contenedor-texto {
     max-width: 600px;
 }
