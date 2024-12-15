@@ -19,13 +19,13 @@ body {
 
 header {
     position: fixed; /* Fija el menú en la parte superior */
-    top: 0; /* Se asegura que inicie desde arriba */
+    top: 0;
     left: 0;
-    width: 100%; /* Ocupa el ancho completo */
-    background-color: #fff; /* Asegura que sea visible */
-    z-index: 1000; /* Se asegura que esté por encima de otras secciones */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
-}
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
 .menu {
     display: flex;
