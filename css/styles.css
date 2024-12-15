@@ -1631,7 +1631,7 @@ a:hover .fab, a:hover .triangulo-play {
 .contenedor-sobre {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0px 0px;
     text-align: center; /* Centra el contenido */
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
