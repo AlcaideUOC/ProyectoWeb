@@ -1628,6 +1628,69 @@ a:hover .fab, a:hover .triangulo-play {
     color: #ccc; /* Opcional: color gris en hover */
 }
 
+.contenedor-sobre {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center; /* Centra el contenido */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.contenedor-sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e5e5e5;
+}
+
+.contenedor-sobre p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.botones-accion .boton-blanco,
+.botones-accion .boton-negro {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botones-accion .boton-blanco {
+    background-color: #fff;
+    color: #000;
+}
+
+.botones-accion .boton-blanco:hover {
+    background-color: #ddd;
+}
+
+.botones-accion .boton-negro {
+    background-color: #000;
+    color: #fff;
+}
+
+.botones-accion .boton-negro:hover {
+    background-color: #444;
+}
+
 
 
 @media (max-width: 480px) {
@@ -1918,6 +1981,28 @@ a:hover .fab, a:hover .triangulo-play {
     .contenedor-botones-pelicula .boton-nav {
         width: 80%;
         max-width: none;
+    }
+    .contenedor-sobre {
+        padding: 30px 15px;
+    }
+
+    .contenedor-sobre h2 {
+        font-size: 2rem;
+    }
+
+    .contenedor-sobre p {
+        font-size: 0.9rem;
+    }
+
+    .botones-accion {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones-accion .boton-blanco,
+    .botones-accion .boton-negro {
+        width: 100%;
+        text-align: center;
     }
 
 }
