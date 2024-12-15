@@ -12,20 +12,16 @@ body {
     font-family: 'Kode Mono', monospace;
     background-color: #fff;
     color: #000;
-    padding-top: 70px; /* Ajusta esto según la altura del menú */
+    /* Establece la fuente principal, fondo blanco y texto negro. */
 }
 
-
-
 header {
-    position: fixed; /* Fija el menú en la parte superior */
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: #fff;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* El header ocupa todo el ancho, con un padding superior e inferior, y centra su contenido. */
+}
 
 .menu {
     display: flex;
@@ -52,15 +48,12 @@ header {
     /* Logo en el footer, centrado y con un ancho definido. */
 }
 
-
 .menu-items {
-    display: none; /* Oculto por defecto */
-    position: absolute;
-    top: 100%; /* Debajo del header */
-    left: 0;
-    width: 100%;
-    background-color: #fff; /* Fondo blanco */
-    z-index: 999; /* Se asegura que esté encima */
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    /* Lista horizontal de ítems del menú, sin viñetas, con espacio entre ellos. */
 }
 
 .menu-items li a {
@@ -84,14 +77,6 @@ header {
   padding: 10px 20px;
   text-decoration: none;
   /* Enlace activo resaltado con fondo negro, texto blanco y bordes redondeados. */
-}
-
-.menu-items.active {
-    display: flex; /* Muestra el menú en móvil */
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px 0;
-    text-align: center;
 }
 
 .mi-cuenta {
@@ -1330,8 +1315,6 @@ header {
     color: #fff;
     /* Sección con imagen de fondo, texto a la derecha y botones de acción. */
 }
-
-
 .seccion-ultima-edicion .contenedor-texto {
     max-width: 600px;
 }
@@ -1647,7 +1630,7 @@ a:hover .fab, a:hover .triangulo-play {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     /* Reglas responsive para móviles y tablets: 
        Se reorganizan menús, tarjetas, grillas y tipografías. */
 
