@@ -1645,7 +1645,7 @@ a:hover .fab, a:hover .triangulo-play {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     /* Reglas responsive para móviles y tablets: 
        Se reorganizan menús, tarjetas, grillas y tipografías. */
 
