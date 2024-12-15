@@ -1919,5 +1919,10 @@ a:hover .fab, a:hover .triangulo-play {
         width: 80%;
         max-width: none;
     }
+
+
+    .seccion-ultima-edicion {
+        margin-top: 0; /* Aseguramos que no haya margen adicional */
+    }
 }
 
