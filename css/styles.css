@@ -12,15 +12,19 @@ body {
     font-family: 'Kode Mono', monospace;
     background-color: #fff;
     color: #000;
-    /* Establece la fuente principal, fondo blanco y texto negro. */
+    padding-top: 70px; /* Ajusta esto según la altura del menú */
 }
 
+
+
 header {
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    /* El header ocupa todo el ancho, con un padding superior e inferior, y centra su contenido. */
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Se asegura que inicie desde arriba */
+    left: 0;
+    width: 100%; /* Ocupa el ancho completo */
+    background-color: #fff; /* Asegura que sea visible */
+    z-index: 1000; /* Se asegura que esté por encima de otras secciones */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
 }
 
 .menu {
@@ -48,12 +52,15 @@ header {
     /* Logo en el footer, centrado y con un ancho definido. */
 }
 
+
 .menu-items {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    /* Lista horizontal de ítems del menú, sin viñetas, con espacio entre ellos. */
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Debajo del header */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Fondo blanco */
+    z-index: 999; /* Se asegura que esté encima */
 }
 
 .menu-items li a {
@@ -77,6 +84,14 @@ header {
   padding: 10px 20px;
   text-decoration: none;
   /* Enlace activo resaltado con fondo negro, texto blanco y bordes redondeados. */
+}
+
+.menu-items.active {
+    display: flex; /* Muestra el menú en móvil */
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .mi-cuenta {
