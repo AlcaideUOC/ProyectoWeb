@@ -102,7 +102,7 @@ header {
     /* Hover en el botón de cuenta: invierte colores. */
 }
 
-.menu-toggle {
+.menu-pequeno {
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -1729,7 +1729,7 @@ a:hover .fab, a:hover .triangulo-play {
         display: flex;
     }
 
-    .menu-toggle {
+    .menu-pequeno {
         display: block;
         order: 3;
     }
