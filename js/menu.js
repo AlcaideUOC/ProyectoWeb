@@ -1,5 +1,5 @@
 // Obtener los elementos del DOM
-const menuToggle = document.getElementById('menu-toggle');
+const menuToggle = document.getElementById('menu-pequeno');
 const menuItems = document.getElementById('menu-items');
 
 // Evento de clic en el botón hamburguesa
